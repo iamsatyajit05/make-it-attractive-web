@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    background-color: #000;
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+::selection {
+    background-color: #FFF;
+    color: #333;
+}
+
+.copypopup {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    display: none;
+    color: #FFF;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.copypopup:hover {
+    border-color: #444;
+}
+
+.copypopup-show-animation {
+    animation-name: copypopup-show;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.copypopup-hide-animation {
+    animation-name: copypopup-hide;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes copypopup-show {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes copypopup-hide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.main-content {
+    width: calc(724px - 20px);
+    padding: 0 20px;
+    margin: auto;
+}
+
+.main-content h1 {
+    color: #F5F5F5;
+    text-align: center;
+    cursor: default;
+    margin: 10px 0;
+}
+
+.main-content h1:first-child {
+    padding-top: 18px;
+}
+
+.main-content div {
+    width: 100%;
+}
+
+.main-content textarea {
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 140px;
+    max-height: 330px;
+    border-radius: 4px;
+    transition: 200ms;
+    border: 2px solid #000;
+    background-color: #333;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.main-content textarea:hover,
+.main-content textarea:focus,
+.main-content textarea:active {
+    border-color: #444;
+}
+
+.main-content div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content input {
+    margin: 4px 0;
+    padding: 8px 12px;
+    margin-right: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #000;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    cursor: default;
+    width: 100%;
+    transition: 200ms;
+}
+
+.main-content input:hover,
+.main-content input:focus,
+.main-content input:active {
+    border-color: #444;
+}
+
+.main-content button {
+    margin: 4px 0;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    transition: 200ms;
+    border: 2px solid #000;
+    background-color: #333;
+    color: #FFF;
+}
+
+.main-content button::before {
+    content: 'COPY';
+}
+
+.main-content button:hover,
+.main-content button:focus,
+.main-content button:active {
+    border-color: #444;
+}
+
+footer {
+    padding: 24px 0;
+}
+
+footer p {
+    text-align: center;
+    color: #F5F5F5;
+}
+
+footer p span::after {
+    content: '';
+    display: inline-block;
+    color: #F5F5F5;
+    text-decoration: none;
+    animation-name: changeword;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeword {
+    0% {
+        content: 'Satyajit';
+    }
+
+    11% {
+        content: '𝗦𝗮𝘁𝘆𝗮𝗷𝗶𝘁';
+    }
+
+    22% {
+        content: '𝘚𝘢𝘵𝘺𝘢𝘫𝘪𝘵';
+    }
+
+    33% {
+        content: '𝙎𝙖𝙩𝙮𝙖𝙟𝙞𝙩';
+    }
+
+    44% {
+        content: 'S̶a̶t̶y̶a̶j̶i̶t̶';
+    }
+
+    55% {
+        content: '𝒮𝒶𝓉𝒶𝓎𝒿𝒾𝓉';
+    }
+
+    66% {
+        content: '𝓢𝓪𝓽𝔂𝓪𝓳𝓲𝓽';
+    }
+
+    77% {
+        content: '𝚂𝚊𝚝𝚊𝚢𝚓𝚒𝚝';
+    }
+
+    88% {
+        content: '𝕊𝕒𝕥𝕒𝕪𝕛𝕚𝕥';
+    }
+
+    100% {
+        content: 'Satyajit';
+    }
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer div a {
+    display: block;
+    margin: 0 10px;
+    color: #CCC;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer div a:hover {
+    color: #FFF;
+}
+
+@media only screen and (max-width: 724px) {
+    .main-content {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main-content button::before {
+        content: '\f0c5';
+        font-family: "Font Awesome 5 Free";
+    }
+}
