@@ -161,10 +161,6 @@ body::-webkit-scrollbar-thumb {
     color: #FFF;
 }
 
-.main-content button::before {
-    content: 'COPY';
-}
-
 .main-content button:hover,
 .main-content button:focus,
 .main-content button:active {

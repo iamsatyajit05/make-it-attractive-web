@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Convert normal text to bold, italic, strikethrough, and more with this attractive text formatting tool. Make your text stand out and express yourself uniquely.">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/a5c22c6bc6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    <title>Make It Attractive!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <title>Make It Attractive - Text Formatting Tool - Unicode Converter</title>
 </head>
+
 <body>
-    <div class="copypopup" id="myCopyPopup">
+    <nav class="copypopup" id="myCopyPopup">
         <p>Text is copied!</p>
-    </div>
-    <div class="main-content" id="mainContent">
+    </nav>
+    <main class="main-content" id="mainContent">
         <h1>Make It Attractive</h1>
         <textarea name="inputText" id="inputText" rows="7" placeholder="What's in your mind?"></textarea>
         <h1>Output</h1>
         <div>
-            <input type="text" id="boldText" placeholder="𝗕𝗼𝗹𝗱" readonly><button id="boldBtn"></button>
+            <input type="text" id="boldText" placeholder="𝗕𝗼𝗹𝗱" readonly><button id="boldBtn" aria-label="Bold Text COPY">COPY</button>
         </div>
         <div>
-            <input type="text" id="italicText" placeholder="𝘐𝘵𝘢𝘭𝘪𝘤" readonly><button id="italicBtn"></button>
+            <input type="text" id="italicText" placeholder="𝘐𝘵𝘢𝘭𝘪𝘤" readonly><button id="italicBtn" aria-label="Italic Text COPY">COPY</button>
         </div>
         <div>
             <input type="text" id="bolditalicText" placeholder="𝘽𝙤𝙡𝙙 𝙄𝙩𝙖𝙡𝙞𝙘" readonly><button
-                id="bolditalicBtn"></button>
+                id="bolditalicBtn" aria-label="Bold Italic Text COPY">COPY</button>
         </div>
         <div>
-            <input type="text" id="corssedText" placeholder="S̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶" readonly><button
-                id="corssedBtn"></button>
+            <input type="text" id="crossedText" placeholder="S̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶" readonly><button
+                id="corssedBtn" aria-label="Strikethrough Text COPY">COPY</button>
         </div>
         <div>
-            <input type="text" id="scriptText" placeholder="𝒮𝒸𝓇𝒾𝓅𝓉" readonly><button id="scriptBtn"></button>
+            <input type="text" id="scriptText" placeholder="𝒮𝒸𝓇𝒾𝓅𝓉" readonly><button id="scriptBtn" aria-label="Script Text COPY">COPY</button>
         </div>
         <div>
             <input type="text" id="boldScriptText" placeholder="𝓢𝓬𝓻𝓲𝓹𝓽" readonly><button
-                id="boldScriptBtn"></button>
+                id="boldScriptBtn" aria-label="Bold Script Text COPY">COPY</button>
         </div>
         <div>
             <input type="text" id="monospaceText" placeholder="𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎" readonly><button
-                id="monospaceBtn"></button>
+                id="monospaceBtn" aria-label="Monospace Text COPY">COPY</button>
         </div>
         <div>
             <input type="text" id="doublestruckText" placeholder="𝔻𝕠𝕦𝕓𝕝𝕖-𝕊𝕥𝕣𝕦𝕔𝕜" readonly><button
-                id="doublestruckBtn"></button>
+                id="doublestruckBtn" aria-label="Double Struck Text COPY">COPY</button>
         </div>
-    </div>
+    </main>
     <footer>
         <p>MADE WITH 💛 BY <span></span></p>
         <div>
-            <a href="https://github.com/iamsatyajit05/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/0xsatyajit/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/iamsatyajit/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/iamsatyajit05/" target="_blank" aria-label="Github Profile"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/0xsatyajit/" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/iamsatyajit/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>

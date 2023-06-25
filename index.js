@@ -5,7 +5,7 @@ let inputText = document.getElementById("inputText")
 let boldText = document.getElementById("boldText")
 let italicText = document.getElementById("italicText")
 let bolditalicText = document.getElementById("bolditalicText")
-let corssedText = document.getElementById("corssedText")
+let crossedText = document.getElementById("crossedText")
 let scriptText = document.getElementById("scriptText")
 let boldScriptText = document.getElementById("boldScriptText")
 let monospaceText = document.getElementById("monospaceText")
@@ -24,7 +24,7 @@ const text = [
     boldText,
     italicText,
     bolditalicText,
-    corssedText,
+    crossedText,
     scriptText,
     boldScriptText,
     monospaceText,
@@ -158,7 +158,7 @@ inputText.addEventListener("keyup", () => {
     boldText.value = bolderizeWord(inputText.value)
     italicText.value = italicWord(inputText.value)
     bolditalicText.value = italicBoldWord(inputText.value)
-    corssedText.value = strikeThrough(inputText.value)
+    crossedText.value = strikeThrough(inputText.value)
     scriptText.value = scriptWord(inputText.value)
     boldScriptText.value = scriptBoldWord(inputText.value)
     monospaceText.value = monospaceWord(inputText.value)
